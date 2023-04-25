@@ -1,0 +1,20 @@
+fields:
+  - name:
+      type: String
+      label: "Nom *"
+      placeholder: "Saisir le nom"
+      required: true
+  - category:
+      type: CategoryEnum
+      label: "Catégorie"
+      input: select
+      source: categories
+  - group:
+      type: GroupEnum
+      label: "Groupe"
+      input: select
+      source: groups
+resolver:
+  name: ItemsResolver
+  method: createItem
+response:
